@@ -37,7 +37,7 @@ void drawmandelbrot(SDL_Surface *surface) {
       z = cpowf(z, 2) + c;
 
       /* If |z| ever gets greater than 2, it diverges. */
-      if (cabs(z) > 2) {
+      if (cabsf(z) > 2) {
         diverges = true;
         break;
       }
