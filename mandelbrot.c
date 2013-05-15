@@ -26,8 +26,8 @@ void drawmandelbrot(SDL_Surface *surface) {
     int y = i / surface->w;
     int x = i % surface->w;
 
-    float complex c = ((3.0 * x / surface->w) - 2.0)
-        + I * ((2.0 * y / surface->h) - 1.0);
+    float complex c = ((3.0f * x / surface->w) - 2.0f)
+        + I * ((2.0f * y / surface->h) - 1.0f);
 
     bool diverges = false;
     float complex z = 0;
